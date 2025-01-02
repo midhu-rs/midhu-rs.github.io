@@ -1,59 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Midhula Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Hi, I'm <span>Midhula</span></h1>
-            <p>A Passionate <strong>Web Developer</strong></p>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home__container">
+      <div class="home__content">
+        <h1 class="name_title">
+          Hi,<br />I'm <span class="title_name">Midhula R S Potty</span><br />
+          <span id="dynamic-title" class="title_roll">Web </span>Developer
+        </h1>
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/midhula-rs" class="icons_social"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/midhu-rs" class="icons_social"><i class="bx bxl-github"></i></a>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I'm a Certified Salesforce B2C Commerce Cloud (SFCC) Developer with 5+ years of experience in e-commerce development, specializing in SFRA frameworks and Demandware implementations. Proficient in front-end and back-end development, custom cartridge creation, and third-party API integrations for large-scale e-commerce platforms.
-            </p>
+      </div>
+      <img class="home__circle-img" src="assets/img/profile.jpg" alt="Profile Image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <h2 class="about__title">About Me</h2>
+      <h2 class="about__subtitle">5+ years of experience</h2>
+      <p class="about_me">
+        I am a <span class="brown_high">Certified Salesforce B2C Commerce Cloud (SFCC) Developer</span> with 5+ years of experience in e-commerce development, specializing in SFRA frameworks and Demandware implementations. Proficient in front-end and back-end development, custom cartridge creation, and third-party API integrations for large-scale e-commerce platforms.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="work" id="work">
+    <div class="work__container">
+      <h2 class="work__title">Work Experience</h2>
+      <div class="work__items">
+        <div class="work__box">
+          <h3>SFCC B2C Developer</h3>
+          <h4>Tryzens India Pvt Ltd | Immediate Joiner</h4>
+          <ul class="ex_list">
+            <li>Designed and implemented Salesforce solutions for SFRA( Demandware) based e-commerce projects.</li>
+            <li>Optimized front-end performance and improved load time.</li>
+            <li>Collaborated with designers and backend developers.</li>
+          </ul>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Amart</h3>
-                <p>Description of your first project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Peacocks</h3>
-                <p>Description of your second project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
+        <div class="work__box">
+          <h3>Software Enginerr</h3>
+          <h4>Provab Technosoft| 2020 - 2021</h4>
+          <ul class="ex_list">
+            <li>Worked with PHP, CodeIgniter, JavaScript, jQuery, MySQL, MSSQL, API Integrations.</li>
+            <li>Built and maintained multiple websites.</li>
+            <li>Ensured the responsive design of web applications.</li>
+          </ul>
         </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:midhula123@gmail.com">midhula123@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/midhula-rs" target="_blank">Your Profile</a></p>
+        <div class="work__box">
+            <h3>Junior PHP Developer</h3>
+            <h4>Provab Technosoft| 2020 - 2021</h4>
+            <ul class="ex_list">
+              <li>Worked with PHP, JavaScript, jQuery, MySQL, Web Socket, API Integrations.</li>
+              <li>Worked with Core Java, React JS and Sound knowledge of SDLC..</li>
+              <li>Ensured the responsive design of web applications.</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="skills__container">
+      <h2 class="skills__title">Skills</h2>
+      <div class="skills__content">
+        <div class="skills__data">
+          <span class="skills__name">HTML5</span>
+          <div class="skills__bar skills__html"></div>
+          <div><span class="skills__percentage">90%</span></div>
         </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>© 2025 Midhula. All Rights Reserved.</p>
+        <div class="skills__data">
+          <span class="skills__name">CSS3</span>
+          <div class="skills__bar skills__css"></div>
+          <div><span class="skills__percentage">85%</span></div>
         </div>
-    </footer>
+        <div class="skills__data">
+          <span class="skills__name">JavaScript</span>
+          <div class="skills__bar skills__js"></div>
+          <div><span class="skills__percentage">80%</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="skills__container">
+        <div class="skills__content">
+          <div class="skills__data">
+            <span class="skills__name">HTML5</span>
+            <div class="skills__bar skills__html"></div>
+            <div><span class="skills__percentage">90%</span></div>
+          </div>
+          <div class="skills__data">
+            <span class="skills__name">CSS3</span>
+            <div class="skills__bar skills__css"></div>
+            <div><span class="skills__percentage">85%</span></div>
+          </div>
+          <div class="skills__data">
+            <span class="skills__name">JavaScript</span>
+            <div class="skills__bar skills__js"></div>
+            <div><span class="skills__percentage">80%</span></div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <h2 class="contact__title">Contact</h2>
+      <div class="contact__form">
+        <form action="https://formspree.io/f/[your-form-id]" method="POST">
+          <div class="form__group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form__group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form__group">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
