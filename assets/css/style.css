@@ -1,146 +1,268 @@
-/* General Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  section {
-    padding: 50px 0;
-  }
-  
-  .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .home__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .name_title {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  .title_name {
-    font-weight: bold;
-  }
-  
-  .home__circle-img {
-    border-radius: 50%;
-    margin-top: 20px;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .icons_social {
-    margin: 0 15px;
-    font-size: 24px;
-  }
-  
-  .icons_social i {
-    color: #333;
-    transition: 0.3s;
-  }
-  
-  .icons_social:hover i {
-    color: #007bff;
-  }
-  
-  .about, .work, .skills, .portfolio, .contact {
-    background-color: #fff;
-  }
-  
-  .about__title, .work__title, .skills__title, .portfolio__title, .contact__title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .skills__bar {
-    height: 10px;
-    width: 100%;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .skills__html {
-    width: 90%;
-    background-color: #ff6600;
-  }
-  
-  .skills__css {
-    width: 85%;
-    background-color: #0d6efd;
-  }
-  
-  .skills__js {
-    width: 80%;
-    background-color: #f0ad4e;
-  }
-  
-  .portfolio__items {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .portfolio__items .work__img img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s;
-  }
-  
-  .portfolio__items .work__img:hover img {
-    transform: scale(1.05);
-  }
-  
-  .contact__form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form__group {
-    margin-bottom: 15px;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    font-size: 1rem;
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  } 
-  
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Home Section */
+.home {
+  background-color: #222;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__content {
+  margin-bottom: 20px;
+}
+
+.name_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.title_name {
+  color: #f8b400;
+}
+
+.title_roll {
+  color: #48c9b0;
+}
+
+.home__social {
+  margin-top: 20px;
+}
+
+.icons_social {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.icons_social:hover {
+  color: #f8b400;
+}
+
+.home__circle-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about__subtitle {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.about_me {
+  font-size: 1.125rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.brown_high {
+  color: #8e735b;
+}
+
+/* Work Experience Section */
+.work {
+  background-color: #f4f4f9;
+  padding: 50px 0;
+}
+
+.work__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.work__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work__box {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.work__box:hover {
+  transform: translateY(-10px);
+}
+
+.work__box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.work__box h4 {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.ex_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ex_list li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Skills Section */
+.skills {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills__content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills__data {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.skills__name {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.skills__bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.skills__html, .skills__css, .skills__js {
+  width: 0;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+
+.skills__percentage {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.skills__html {
+  background-color: #e34f26;
+}
+
+.skills__css {
+  background-color: #264de4;
+}
+
+.skills__js {
+  background-color: #f7df1e;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #48c9b0;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f8b400;
+}
